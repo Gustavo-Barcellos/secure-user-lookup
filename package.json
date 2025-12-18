@@ -24,7 +24,9 @@
   "scripts": {
     "test:watch": "jest --watchAll",
     "test:db": "node src/scripts/test-db-connection.js",
-    "services:up": "docker-compose up -d"
+    "services:up": "docker-compose up -d",
+    "test:user": "node src/scripts/test-user-module.js",
+    "list:users": "node src/scripts/list-users.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
