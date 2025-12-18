@@ -22,7 +22,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test:db": "node src/scripts/test-db-connection.js",
+    "services:up": "docker-compose up -d"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
