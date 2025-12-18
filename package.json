@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Mini-serviço backend para busca segura de usuários por e-mail usando Postgres. Implementa queries parametrizadas, tratamento de erros e estrutura modular pronta para produção.",
   "keywords": [
-    "[\"postgres\"",
-    "\"sql\"",
-    "\"backend\"",
-    "\"security\"",
-    "\"queries\"]"
+    "postgres",
+    "sql",
+    "backend",
+    "security",
+    "queries"
   ],
   "homepage": "https://github.com/Gustavo-Barcellos/secure-user-lookup#readme",
   "bugs": {
@@ -22,7 +22,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test:watch": "jest --watchAll",
+    "lint": "echo 'Lint check: configuração será implementada em atualizações futuras'",
     "test:db": "node src/scripts/test-db-connection.js",
     "services:up": "docker-compose up -d",
     "test:user": "node src/scripts/test-user-module.js",
@@ -33,8 +33,10 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "eslint": "^9.39.2",
     "jest": "^30.2.0",
     "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
   }
 }

@@ -37,6 +37,12 @@ O projeto oferece diferentes formas de consultar usuários:
 - Para erros de conexão: Verifique o Docker e as credenciais
 - Para erros de consulta: Verifique a existência da tabela e dos dados
 
+## Trabalhos Futuros
+
+- Implementar verificação de código com ESLint
+- Expandir cobertura de testes
+- Adicionar documentação da API com Swagger
+
 ## Licença
 
 Este projeto está licenciado sob a MIT License.
