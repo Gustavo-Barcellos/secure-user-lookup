@@ -26,7 +26,10 @@
     "test:db": "node src/scripts/test-db-connection.js",
     "services:up": "docker-compose up -d",
     "test:user": "node src/scripts/test-user-module.js",
-    "list:users": "node src/scripts/list-users.js"
+    "list:users": "node src/scripts/list-users.js",
+    "test:user:manual": "node src/scripts/manual-test-user-search.js",
+    "seed:users": "node src/scripts/seed-test-users.js",
+    "test:user:auto": "node src/scripts/automated-test-user-search.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",

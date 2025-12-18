@@ -16,8 +16,9 @@ class UserRepository {
   async findByEmail(email) {
     try {
       // Definição da query com placeholder para evitar SQL injection
+      // Adicionamos a condição para filtrar usuários removidos
       const query = {
-        text: 'SELECT id, email, username FROM users WHERE email = $1',
+        text: 'SELECT id, email, username FROM users WHERE email = $1 AND (deleted IS NULL OR deleted = FALSE)',
         values: [email]
       };
 
